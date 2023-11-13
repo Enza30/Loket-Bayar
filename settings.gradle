@@ -1,0 +1,5 @@
+rootProject.name='Loket Bayar'
+include ':app'
+include ':mylibrary'
+include ':printooth'
+include ':printooth'

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Loket Bayar</string>
+    <string name="sp">loketbayar</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="xyz">https://loketbayar.id/loket/</string>
+    <string name="link">https://loketbayar.id/</string>
+
+    <string name="key">Zb2M#E0T4W$*</string>
+    <string name="key2">54574da5e2e24a4fafdc24914c13ea61c230de65</string>
+    <string name="secret">asjkrue*$djasfl134213</string>
+    <string name="secret2">KwPARmdhy5thGAfAcNkrzfXNyRaGZw1L</string>
+    <string name="ubahpas">ubahpas</string>
+    <string name="usernbame">username</string>
+    <string name="password">password</string>
+    <string name="passbaru">passbaru</string>
+    <string name="konfirmpas">konfirmpas</string>
+    <string name="overload">Ganti Password Gagal</string>
+    <string name="updatepas">updatepas</string>
+    <string name="email">email</string>
+    <string name="lupapasword">lupapaswordmbb</string>
+</resources>

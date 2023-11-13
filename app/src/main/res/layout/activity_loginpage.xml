@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="0dp"
+    tools:context="mudahbayar.id.Loginpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="260dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/background" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/boxes5"
+                android:fontFamily="@font/roboto"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+                tools:targetApi="jelly_bean" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/boxes5"
+                android:fontFamily="@font/roboto"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                app:layout_constraintTop_toBottomOf="@+id/etUsername"
+                tools:targetApi="jelly_bean" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/buttonorange"
+                android:fontFamily="@font/roboto"
+                android:padding="20dp"
+                android:text="MASUK"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/etForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Lupa Password ?"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+            <TextView
+                android:id="@+id/etForgot4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Belum punya akun ? Daftar"
+                android:textColor="#090909"
+                android:textStyle="bold|italic"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+            <TextView
+                android:id="@+id/etForgot2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:textColor="#121111"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+            <ImageView
+                android:id="@+id/ivWhats"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/chat"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/etForgot3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:autoLink="web"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="www.loketbayar.id/privacy"
+                android:textColor="#090909"
+                android:textColorHighlight="#0B0A0A"
+                android:textColorLink="#101010"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@drawable/boxnopadding"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:id="@+id/llSubAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvUserSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="SUBTOTAL"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvProduksub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFeesub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="Fee"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHargaLoketsub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="Harga Loket"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtotal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:id="@+id/llutama"
+        app:layout_constraintTop_toBottomOf="@+id/llSubAtas"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/boxtable"
+            android:padding="3dp"
+            android:gravity="left|center_vertical"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvUser"
+            android:text="User"
+            android:fontFamily="@font/poppins"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvProduk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="Produk"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+        <TextView
+            android:background="@drawable/boxtable"
+            android:padding="3dp"
+            android:gravity="left|center_vertical"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvFee"
+            android:text="Fee"
+            android:fontFamily="@font/poppins"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:background="@drawable/boxtable"
+            android:padding="3dp"
+            android:gravity="left|center_vertical"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvHargaLoket"
+            android:text="Harga Loket"
+            android:fontFamily="@font/poppins"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:background="@drawable/boxtable"
+            android:padding="3dp"
+            android:gravity="left|center_vertical"
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvTotal"
+            android:text="Total"
+            android:fontFamily="@font/poppins"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:background="@drawable/boxnopadding"
+        app:layout_constraintTop_toBottomOf="@+id/llutama"
+        app:layout_constraintEnd_toStartOf="parent"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:id="@+id/llSubBawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvUserSub2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="SUBTOTAL"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvProduksub2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFeesub2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="Fee"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHargaLoketsub2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="Harga Loket"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtotal2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boxtable"
+            android:fontFamily="@font/poppins"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

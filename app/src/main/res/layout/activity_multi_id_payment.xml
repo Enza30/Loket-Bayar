@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mudahbayar.id.MultiIdPayment">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbarholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/toolbarspln"/>
+        </com.google.android.material.appbar.AppBarLayout>
+      <LinearLayout
+          android:layout_above="@+id/bawahholder"
+          android:layout_below="@+id/toolbarholder"
+          android:paddingStart="6dp"
+          android:paddingEnd="6dp"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="4dp"
+              android:weightSum="2">
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.6"
+                  android:fontFamily="@font/poppins"
+                  android:text="PRODUK"
+                  android:textColor="@color/biru"
+                  android:textStyle="bold" />
+
+              <Spinner
+                  android:id="@+id/spProduk"
+                  style="?android:attr/spinnerDropDownItemStyle"
+                  android:layout_width="0dp"
+                  android:layout_height="30dp"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"
+                  android:layout_weight="1.4" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/llAdmin"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:orientation="horizontal"
+              android:padding="4dp"
+              android:visibility="gone"
+              android:weightSum="2">
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.6"
+                  android:fontFamily="@font/poppins"
+                  android:text="ADMIN"
+                  android:textColor="@color/biru"
+                  android:textStyle="bold" />
+
+              <Spinner
+                  android:id="@+id/spAdmin"
+                  android:layout_width="0dp"
+                  android:layout_height="30dp"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"
+                  android:layout_weight="1.4" />
+          </LinearLayout>
+
+          <EditText
+              android:id="@+id/etIdpel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/boxnopadding"
+              android:fontFamily="@font/poppins"
+              android:hint="ID Pelanggan"
+              android:inputType="number"
+              android:padding="6dp"
+              android:textColor="@color/black" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:orientation="horizontal"
+              android:weightSum="2">
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:id="@+id/btcheck"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:background="@drawable/tombolbiru"
+                  android:fontFamily="@font/poppins"
+                  android:text="CEK TAGIHAN"
+                  android:textColor="@color/white" />
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:id="@+id/btKosongkan"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="2dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/tombolbiru"
+                  android:fontFamily="@font/poppins"
+                  android:text="KOSONGKAN"
+                  android:textColor="@color/white" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/llHead"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:orientation="horizontal"
+              android:weightSum="7"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <TextView
+                  android:id="@+id/tvNomer"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="0.5"
+                  android:background="@drawable/kotak2"
+                  android:fontFamily="@font/poppins"
+                  android:gravity="top"
+                  android:padding="3dp"
+                  android:text="No."
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+
+              <TextView
+                  android:id="@+id/tvIdpel"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1.5"
+                  android:background="@drawable/kotak2"
+                  android:fontFamily="@font/poppins"
+                  android:gravity="top"
+                  android:padding="3dp"
+                  android:text="Nama Produk"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+
+
+              <TextView
+                  android:id="@+id/tvTotal"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/kotak2"
+                  android:fontFamily="@font/poppins"
+                  android:gravity="top"
+                  android:padding="3dp"
+                  android:text="Periode"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+
+              <TextView
+                  android:id="@+id/tvPeriode"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/kotak2"
+                  android:fontFamily="@font/poppins"
+                  android:gravity="top"
+                  android:padding="3dp"
+                  android:text="Tagihan"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+
+              <TextView
+                  android:id="@+id/tvAdmin"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/kotak2"
+                  android:fontFamily="@font/poppins"
+                  android:gravity="top"
+                  android:padding="3dp"
+                  android:text="Admin"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+
+              <TextView
+                  android:id="@+id/tvNama"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/kotak2"
+                  android:fontFamily="@font/poppins"
+                  android:gravity="top"
+                  android:padding="3dp"
+                  android:text="Total"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/kotak2"
+                  android:fontFamily="@font/poppins"
+                  android:gravity="top"
+                  android:padding="3dp"
+                  android:textColor="@color/black"
+                  android:textSize="10sp" />
+          </LinearLayout>
+
+          <androidx.core.widget.NestedScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <androidx.recyclerview.widget.RecyclerView
+
+                  android:id="@+id/rvList"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/kotak"
+                  app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+          </androidx.core.widget.NestedScrollView>
+
+      </LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:orientation="vertical"
+        android:id="@+id/bawahholder"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTotalSemua"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/boxes4"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Total Tagihan: Rp.0\nSaldo akan terpotong: Rp.0"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <LinearLayout
+
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btPrint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/tombolbiru"
+                android:enabled="false"
+                android:fontFamily="@font/poppins"
+                android:text="Print"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btPdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonmerah"
+                android:enabled="false"
+                android:fontFamily="@font/poppins"
+                android:text="PDF"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btBayar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/tombolhijau"
+                android:enabled="false"
+                android:fontFamily="@font/poppins"
+                android:text="BAYAR"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

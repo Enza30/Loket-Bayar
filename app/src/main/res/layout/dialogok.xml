@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/boxnopadding">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvTanya"
+                android:layout_width="348dp"
+                android:layout_height="69dp"
+                android:background="#fff"
+                android:fontFamily="@font/poppins"
+                android:padding="5dp"
+                android:text="Message"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvIf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTanya"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="User Account Details Has Been Sent To Your Email"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <ImageView
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:layout_marginTop="-10dp"
+                android:background="@color/biru"
+                android:alpha="0.4"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/logo"
+                android:layout_width="130dp"
+                android:layout_height="80dp"/>
+
+                <Button
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvIf"
+                    android:id="@+id/btTidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tombolbiru"
+                    android:fontFamily="@font/poppins"
+                    android:text="ok"
+                    android:textColor="#fff" />
+
+        </RelativeLayout>
+</RelativeLayout>
